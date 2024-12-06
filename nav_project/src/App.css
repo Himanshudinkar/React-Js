@@ -1,0 +1,38 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 90px;
+  background-color: red;
+}
+
+.navbar h1{
+  font-size: 35px;
+}
+
+.navbar ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.navbar ul li{
+  list-style: none;
+  font-size: 20px;
+  background-color: blue;
+  padding: 5px;
+  border: black;
+  border-radius: 5px;
+}
+
+.content h1{
+  text-align: center;
+  font-size: 90px;
+}
+
+.content h3{
+  text-align: center;
+  font-size: 40px;
+  color: red;
+}
