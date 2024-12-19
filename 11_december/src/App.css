@@ -1,0 +1,12 @@
+.content{
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 70px;
+}
+.cards{
+  display: flex;
+  flex-direction: row;
+ 
+  gap: 70px;
+}

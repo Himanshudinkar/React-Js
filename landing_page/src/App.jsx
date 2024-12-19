@@ -1,16 +1,18 @@
 import './App.css'
+import Header from './Header'
 import Hero from './Hero'
 import Content from './Content'
-import Event from './Event'
+import Footer from './Footer'
 
 function App() {
  
 
   return (
     <>
+      <Header />
       <Hero />
       <Content />
-      <Event />
+      <Footer />
     </>
   )
 }

@@ -5,6 +5,18 @@ import myimg from './assets/order.png'
 
 
 let Hero = () =>{
+
+     function pt(){
+        let a = document.querySelector('#photo');
+        a.style.height = "200px";
+        a.style.width = "200px";
+    }
+
+    function lt(){
+        let a = document.querySelector('#photo');
+        a.style.height = "500px";
+        a.style.width = "500px";
+    }
     
 
     return(
@@ -23,9 +35,9 @@ let Hero = () =>{
         <br />
         illo molestias, nostrum animi voluptatum quia?
         </p>
-         <button>Click</button>
+         <button onClick={()=>alert("inline event")} >Click</button>
          </div>
-         <img src="cat.webp" alt="" />
+         <img onMouseEnter={pt} onMouseLeave={lt} src="cat.webp" alt="" id='photo' />
          </div>
         </>
     )
