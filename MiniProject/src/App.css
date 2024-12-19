@@ -1,0 +1,95 @@
+*{
+   margin: 0%;
+   padding: 0%;
+   box-sizing: border-box;
+}
+
+.head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  background-color:aqua;
+  border-bottom: 1px solid black;
+}
+
+.head h1{
+  margin-left: 40px;
+}
+
+.head nav ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-right: 40px;
+}
+
+.head nav ul li{
+  list-style: none;
+}
+
+.head nav ul li Link{
+  color: black;
+}
+
+.backimg{
+  background-image: url("https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.backimg button{
+  color: white;
+  font-size: 30px;
+  background-color: rgba(0, 0, 255, 0.416);
+  padding: 10px;
+  margin-top: 160px;
+  margin-left: 550px;
+
+}
+
+.backimg h1{
+  margin-left: 430px;
+  margin-top: 50px;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+}
+
+.foot{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: aqua;
+}
+
+.foot .f{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: aqua;
+  gap: 20px;
+}
+
+.foot .f h5{
+font-size: 20px;
+}
+
+.aboutback{
+  background-image: url("https://images.pexels.com/photos/743986/pexels-photo-743986.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.contectback{
+  background-image: url("https://images.pexels.com/photos/1097456/pexels-photo-1097456.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
