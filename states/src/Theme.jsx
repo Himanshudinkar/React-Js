@@ -1,38 +1,26 @@
 import { useState } from "react";
 
-function Theme(props){
+function Theme(props) {
+  let [change, setchange] = useState(false);
 
-   let [change, setchange] = useState(false)
+  let backgroundColor = change ? "black" : "white";
 
+  return (
+    <>
+      <h1>{props.name}</h1>
+      <div
+        style={{
+          height: "100vh",
+          width: "100vw",
+          backgroundColor: backgroundColor,
+        }}
+      ></div>
 
-
-   if(change)
-   {
-    change = "black"
-   }
-   else
-   {
-    change = "white"
-   }
-
-
-    return(
-        <>
-
-        <h1>{props.name}</h1>
-         <div style={{height:"100vh", width:"100vw",backgroundColor:change}}>
-
-        </div>
-
-
-        <button onClick={()=>setchange(!change)}>
-            {(change==="black" ) ? "light" : "Dark"}
-        </button>
-        
-     
-
-        </>
-    )
+      <button onClick={() => setchange(!change)}>
+        {change ? "Light" : "Dark"}
+      </button>
+    </>
+  );
 }
 
-export default Theme
+export default Theme;
