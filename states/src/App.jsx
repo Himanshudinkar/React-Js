@@ -1,6 +1,9 @@
 import { useState } from "react"
 import Task from "./task"
 import Photo from "./photo"
+import Compo from "./Component1"
+import Theme from "./Theme"
+
 
 function App() {
 
@@ -17,15 +20,23 @@ function App() {
     }
   }
   
+  function inner(){
+    let a = document.querySelector('#output')
+    a.innerHTML = `Himanshu`;
+  }
 
   return (
     <>
+       <h6 id="output"></h6>
+       <button onClick={inner}>Inner</button>
       <h1>{count}</h1>
       <button onClick={add}>Increment</button>
        <button onClick={dic}>Decrement</button>
 
        <Task />
        <Photo />
+       <Compo/>
+       <Theme name = {"Himanshu"}/>
     </>
   )
 }
