@@ -1,0 +1,37 @@
+.head nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   gap: 20px;
+}
+.head nav ul li{
+    list-style: none;
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+.cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-left: 40px;
+}
+
+.cont button{
+    background-color: blue;
+    color: white;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+.prop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 60px;
+}

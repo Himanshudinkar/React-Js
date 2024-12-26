@@ -3,6 +3,7 @@ import Task from "./task"
 import Photo from "./photo"
 import Compo from "./Component1"
 import Theme from "./Theme"
+import Useeffect from "./Effect"
 
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
        <Photo />
        <Compo/>
        <Theme name = {"Himanshu"}/>
+       <Useeffect/>
     </>
   )
 }

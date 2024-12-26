@@ -8,13 +8,12 @@ function Theme(props) {
   return (
     <>
       <h1>{props.name}</h1>
-      <div
-        style={{
-          height: "100vh",
-          width: "100vw",
-          backgroundColor: backgroundColor,
-        }}
-      ></div>
+      <div style={{height: "100vh",width: "100vw",backgroundColor: backgroundColor,}}>
+      </div>
+
+
+    
+
 
       <button onClick={() => setchange(!change)}>
         {change ? "Light" : "Dark"}
