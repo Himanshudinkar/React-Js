@@ -9,7 +9,7 @@ const Frm = () =>{
 
         console.log(event.target.value);
 
-        setH(event.target.value)
+        setH(event.target.value);
     }
 
      function ninput(event){
