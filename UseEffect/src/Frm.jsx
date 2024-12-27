@@ -19,9 +19,10 @@ const Frm = () =>{
         setN(event.target.value)
     }
 
+    let a = h
+
     function st(){
-       let a = document.querySelector('#output');
-       a.innerHTML = h;
+       let a = h;
     }
 
     
@@ -31,7 +32,7 @@ const Frm = () =>{
         <h1>My Name {h}</h1>
         <input type="text" onChange={hinput} />
         <button onClick={st}>submit</button>
-        <h1 id="output"></h1>
+        <h1>{a}</h1>
         <h2>Number {n}</h2>
         <input type="number" onChange={ninput} />
         
