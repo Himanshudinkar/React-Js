@@ -30,6 +30,26 @@ const Map = () =>{
 
     let arf =  ar.map((e,index) => {return <li key={index}> {e} </li>})
 
+     let arr_ob = [
+        {
+            Name:'Himanshu',
+            age:23,
+            city:'Bhopal'
+        },
+         {
+            Name:'vikas ',
+            age:23,
+            city:'Bhopal'
+        },
+         {
+            Name:'sudhansh',
+            age:23,
+            city:'Bhopal'
+        }
+    ]
+
+    let arrrrrrr = arr_ob.map((e,index)=> {return <h1 key={index}>{e.Name} - {e.age} - {e.city}</h1>})
+
     return(
         <>
 
@@ -54,6 +74,8 @@ const Map = () =>{
 
             </tbody>
         </table>
+
+        <h1>{arrrrrrr}</h1>
 
         </>
     )

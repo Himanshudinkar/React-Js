@@ -1,14 +1,15 @@
 import { useState } from "react"
+import Login from "./Login"
 
 const Form = () =>{
 
     let [inputname,setInput] = useState({
         name:'',
         email:'',
-        mobile:'',
-        address:'',
-        city:''
+        mobile:''
     })
+
+    let [status,setStatus] = useState(false)
 
     function hinput(event){
         let {name,value} = event.target;
@@ -23,24 +24,39 @@ const Form = () =>{
     const finalSubmit =(event) =>{
         event.preventDefault();
 
+        if(inputname.name == "" || inputname.email == "" || inputname.mobile == "" )
+        {
+            alert("empty")
+        }
+
+       else
+       {
+         localStorage.setItem('userdata', JSON.stringify(inputname))
+         setStatus(true)
+       }
+
         console.log(inputname)
 
     }
 
+    if(status)
+    {
+        return <Login />
+    }
+    
+
     return(
         <>
         <form onSubmit={finalSubmit}>
+            
             <label htmlFor="">Name</label>
             <input type="text" name="name" value={inputname.name} onChange={hinput}/> <br />
             <label htmlFor="">Email</label>
             <input type="text" name="email" value={inputname.email} onChange={hinput}/> <br />
             <label htmlFor="">Mobile</label>
             <input type="text" name="mobile" value={inputname.mobile} onChange={hinput}/> <br />
-            <label htmlFor="">Address</label>
-            <input type="text" name="address" value={inputname.address} onChange={hinput}/> <br />
-            <label htmlFor="">City</label>
-            <input type="text" name="city" value={inputname.city} onChange={hinput}/> <br />
             <input type="submit"  />
+
         </form>
         
         </>
