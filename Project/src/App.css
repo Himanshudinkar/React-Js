@@ -1,0 +1,46 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.navs img{
+  height: 100px;
+  width: 90px;
+  margin-left: 20px;
+}
+
+.navs .navs1{
+  
+  background-color:rgba(0, 0, 0, 0.473);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 115px;
+  border-bottom: 3px solid orange;
+}
+
+.navs nav ul{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+ 
+}
+
+.navs nav ul li{
+  list-style: none;
+  color: rgb(0, 0, 0);
+  margin-right: 20px;
+}
+
+.navs nav ul li .home{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+.navs nav ul li .home span{
+  background-color: orange;
+  padding: 5px;
+  border-radius: 5px;
+}

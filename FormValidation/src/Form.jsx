@@ -3,12 +3,14 @@ import Login from "./Login"
 
 const Form = () =>{
 
+
     let [inputname,setInput] = useState({
         name:'',
         email:'',
         mobile:''
     })
 
+    
     let [status,setStatus] = useState(false)
 
     function hinput(event){
